@@ -1,0 +1,40 @@
+// .hidden {
+//   display: none;
+// }
+
+// .checkbox {
+//   display: flex;
+//   align-items: center;
+// }
+
+// .checkbox-btn {
+//   position: relative;
+//   display: inline-flex;
+//   justify-content: center;
+//   align-items: center;
+//   width: 14px;
+//   height: 14px;
+//   border: 1px solid $silver-light;
+//   border-radius: 2px;
+
+//   i {
+//     font-size: 9px;
+//     opacity: 0;
+//     transition: all 0.3s ease;
+//   }
+// }
+
+// .checkbox-text {
+//   padding-left: 10px;
+//   overflow: hidden;
+//   text-overflow: ellipsis;
+//   white-space: nowrap;
+// }
+
+// .checkbox input:checked + .checkbox-btn i {
+//   opacity: 1;
+//   color: $white;
+//   background-color: $gray;
+//   padding: 3px;
+//   border-radius: 2px;
+// }

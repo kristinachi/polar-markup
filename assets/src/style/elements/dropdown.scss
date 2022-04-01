@@ -1,0 +1,71 @@
+// .drop {
+//   position: relative;
+
+//   &__wrap {
+//     &:hover {
+//       .drop__box {
+//         visibility: visible;
+//         transition: all 0.3s ease;
+//         opacity: 1;
+//       }
+//     }
+//   }
+
+//   &__btn {
+//     width: 100%;
+//     min-width: 170px;
+//     display: flex;
+//     align-items: center;
+//     padding: 10px;
+//     color: $gray;
+//     background-color: $white;
+
+//     i {
+//       margin-left: auto;
+//       font-size: 10px;
+//     }
+//   }
+
+//   &__box {
+//     position: absolute;
+//     top: calc(100% + 4px);
+//     visibility: hidden;
+//     background-color: $white;
+//     transition: all 0.3s ease;
+//     opacity: 0;
+//     z-index: 1;
+//     min-width: 170px;
+//     max-width: 170px;
+//     box-shadow: 2px 6px 16px rgba(174, 182, 202, 0.31);
+//     border-radius: 2px;
+//     text-transform: uppercase;
+//     padding-bottom: 10px;
+//   }
+
+//   &__select {
+//     max-height: 180px;
+//     overflow-y: auto;
+//     margin-bottom: 10px;
+
+//     li {
+//       display: block;
+//       padding: 10px;
+//       font-weight: 500;
+//       color: $gray;
+
+//       &:hover {
+//         background-color: $gray-1;
+//       }
+//     }
+//   }
+
+//   &__group {
+//     display: flex;
+//     align-items: center;
+//     flex-direction: column;
+
+//     li:not(:last-child) {
+//       margin-bottom: 4px;
+//     }
+//   }
+// }

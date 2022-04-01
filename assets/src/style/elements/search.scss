@@ -1,0 +1,65 @@
+.search {
+  position: relative;
+
+  &__input {
+    width: 100%;
+    padding: 23px 0 23px 30px;
+    background-color: $lightgray;
+    line-height: 28px;
+    border-radius: 5px;
+  }
+
+  &__btn {
+    position: absolute;
+    right: 0px;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 100%;
+    width: 134px;
+    border-radius: 5px;
+    background-color: $primary;
+    color: $white;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 23px;
+
+    &:hover {
+      background-color: rgba($primary, 0.8);
+    }
+  }
+}
+
+.subscribe {
+  position: relative;
+
+  width: 388px;
+
+  &__input {
+    width: 100%;
+    padding: 18px 0 18px 32px;
+    background-color: $black;
+    border: 2px solid $primary;
+    border-radius: 5px;
+    line-height: 16px;
+    color: rgba($white, 0.7);
+  }
+
+  &__btn {
+    position: absolute;
+    right: 0px;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 100%;
+    width: 125px;
+    border-radius: 5px;
+    background-color: $primary;
+    color: $white;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 23px;
+
+    &:hover {
+      background-color: rgba($primary, 0.8);
+    }
+  }
+}

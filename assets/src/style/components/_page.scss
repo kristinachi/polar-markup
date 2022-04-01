@@ -8,12 +8,21 @@
 
 .hero-section {
   display: block;
-  background: url(../img/ice-cream.png);
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: right;
-  min-height: 720px;
-  padding-top: 196px;
+  padding: 30px 0;
+
+  @media (min-width: $breakpoint-xs) {
+    background: url(../img/ice-cream.png);
+    background-size: 300px;
+    background-repeat: no-repeat;
+    background-position: bottom right;
+  }
+
+  @media (min-width: $breakpoint-sm) {
+    background-position: right;
+    background-size: contain;
+    min-height: 720px;
+    padding-top: 196px;
+  }
 }
 
 .hero {
@@ -29,11 +38,16 @@
   }
 
   &__title {
-    font-size: 58px;
-    line-height: 69px;
+    font-size: 34px;
+    line-height: 40px;
     color: rgba($gray, 0.9);
     margin-bottom: 36px;
     font-weight: 600;
+
+    @media (min-width: $breakpoint-xs) {
+      font-size: 58px;
+      line-height: 69px;
+    }
 
     span {
       color: $primary;
@@ -50,17 +64,31 @@
 }
 
 .delivery-section {
-  padding: 60px 0;
+  padding: 30px 0;
+
+  @media (min-width: $breakpoint-sm) {
+    padding: 60px 0;
+  }
 }
 
 .details-section {
   display: block;
-  background: url(../img/ice-cream-2.png);
-  background-size: 600px;
-  background-repeat: no-repeat;
-  background-position: right;
-  min-height: 440px;
-  padding-top: 80px;
+  padding: 30px 0;
+
+  @media (min-width: $breakpoint-xs) {
+    background: url(../img/ice-cream-2.png);
+    background-size: 360px;
+    background-repeat: no-repeat;
+    background-position: center right;
+    padding: 50px 0;
+  }
+
+  @media (min-width: $breakpoint-sm) {
+    background-size: 600px;
+    background-position: right;
+    min-height: 440px;
+    padding-top: 80px;
+  }
 }
 
 .details {
@@ -83,35 +111,67 @@
 }
 
 .product-section {
-  padding: 100px 0 0;
+  padding-top: 30px;
+
+  @media (min-width: $breakpoint-sm) {
+    padding-top: 100px;
+  }
 }
 
 .product {
   &__title {
     font-weight: 600;
-    font-size: 44px;
-    line-height: 62px;
-    margin-bottom: 64px;
+    font-size: 24px;
+    line-height: 32px;
+    margin-bottom: 24px;
     text-align: center;
+
+    @media (min-width: $breakpoint-sm) {
+      font-size: 44px;
+      line-height: 62px;
+      margin-bottom: 64px;
+    }
   }
 
   &__nav {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 0 -20px;
+    flex-wrap: wrap;
+    margin: 0 -10px;
+
+    @media (min-width: $breakpoint-xs) {
+      margin: 0 -20px;
+      flex-wrap: nowrap;
+    }
 
     li {
-      padding: 0 20px;
+      padding: 0 10px;
+      width: 50%;
+      margin-bottom: 10px;
+      text-align: center;
+
+      @media (min-width: $breakpoint-sm) {
+        padding: 0 20px;
+        width: 100%;
+        margin-bottom: 0;
+        text-align: left;
+      }
     }
 
     a {
       font-weight: 500;
-      font-size: 18px;
-      line-height: 22px;
+      font-size: 12px;
+      line-height: 14px;
       color: rgba($black, 0.6);
       text-transform: uppercase;
       padding-bottom: 4px;
+      white-space: nowrap;
+
+      @media (min-width: $breakpoint-sm) {
+        font-size: 18px;
+        line-height: 22px;
+      }
 
       &:hover {
         color: $black;
@@ -204,7 +264,6 @@
       width: 100%;
     }
 
-
     &.active {
       height: 58px;
       width: 58px;
@@ -222,15 +281,19 @@
   &.right {
     transform: rotate(-45deg);
   }
-  
+
   &.left {
     transform: rotate(135deg);
   }
 }
 
 .feedback {
-  display: flex;
-  justify-content: space-between;
+  display: none;
+
+  @media (min-width: $breakpoint-lg) {
+    display: flex;
+    justify-content: space-between;
+  }
 
   &__img {
     width: 564px;
@@ -244,19 +307,30 @@
 }
 
 .app-section {
-  padding: 90px 0 100px;
+  padding: 30px 0;
   position: relative;
+
+  @media (min-width: $breakpoint-md) {
+    padding: 90px 0 100px;
+  }
 }
 
 .app {
-  display: flex;
-  align-items: center;
+  @media (min-width: $breakpoint-md) {
+    display: flex;
+    align-items: center;
+  }
 
   &__img {
-    width: 305px;
-    height: 628px;
-    position: absolute;
-    top: 6%;
+    display: none;
+
+    @media (min-width: $breakpoint-md) {
+      display: block;
+      width: 305px;
+      height: 628px;
+      position: absolute;
+      top: 6%;
+    }
 
     img {
       display: block;
@@ -265,8 +339,10 @@
   }
 
   &__box {
-    max-width: 630px;
-    margin-left: auto;
+    @media (min-width: $breakpoint-md) {
+      max-width: 630px;
+      margin-left: auto;
+    }
   }
 
   &__title {
@@ -327,7 +403,11 @@
 }
 
 .question-section {
-  padding: 140px 0;
+  padding: 70px 0;
+
+  @media (min-width: $breakpoint-md) {
+    padding: 140px 0;
+  }
 }
 
 .question {
@@ -345,23 +425,42 @@
 }
 
 .footer-section {
-  padding: 70px 0 90px;
+  padding: 30px 0 40px;
+
+  @media (min-width: $breakpoint-xs) {
+    padding: 70px 0 90px;
+  }
 }
 
 .footer-top,
 .footer-bottom {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  margin: 0 -15px;
+  @media (min-width: $breakpoint-xs) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 -15px;
+  }
 
   > div {
-    padding: 0 15px;
+    margin-bottom: 14px;
+
+    @media (min-width: $breakpoint-xs) {
+      padding: 0 15px;
+      margin-bottom: 30px;
+    }
+
+    @media (min-width: $breakpoint-sm) {
+      margin-bottom: 0;
+    }
   }
 }
 
 .footer-main {
-  width: 25%;
+  width: 100%;
+
+  @media (min-width: $breakpoint-sm) {
+    width: 25%;
+  }
 
   &__img {
     width: 80px;
@@ -406,7 +505,15 @@
 }
 
 .footer-col {
-  width: auto;
+  width: 100%;
+
+  @media (min-width: $breakpoint-xs) {
+    width: 50%;
+  }
+
+  @media (min-width: $breakpoint-md) {
+    width: auto;
+  }
 
   &__title {
     font-weight: 500;
@@ -418,6 +525,7 @@
 
   &__search {
     margin-bottom: 16px;
+    max-width: 388px;
   }
   &__list {
     display: flex;

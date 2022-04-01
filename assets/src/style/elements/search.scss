@@ -3,10 +3,14 @@
 
   &__input {
     width: 100%;
-    padding: 23px 0 23px 30px;
+    padding: 10px 0 10px 20px;
     background-color: $lightgray;
     line-height: 28px;
     border-radius: 5px;
+
+    @media (min-width: $breakpoint-md) {
+      padding: 23px 0 23px 30px;
+    }
   }
 
   &__btn {
@@ -32,16 +36,22 @@
 .subscribe {
   position: relative;
 
-  width: 388px;
+  @media (min-width: $breakpoint-md) {
+    width: 388px;
+  }
 
   &__input {
     width: 100%;
-    padding: 18px 0 18px 32px;
+    padding: 8px 0 8px 22px;
     background-color: $black;
     border: 2px solid $primary;
     border-radius: 5px;
     line-height: 16px;
     color: rgba($white, 0.7);
+
+    @media (min-width: $breakpoint-sm) {
+      padding: 18px 0 18px 32px;
+    }
   }
 
   &__btn {
